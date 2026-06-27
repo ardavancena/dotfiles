@@ -1,0 +1,6 @@
+@define-color waybar-background #131216;
+@define-color module-background #27252A;
+@define-color foreground #FFFFFF;
+@define-color active #484459;
+@define-color urgent #E59c3c;
+@define-color error #f53c3c;

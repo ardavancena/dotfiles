@@ -1,0 +1,46 @@
+{
+    "spacing": 4,
+
+    "modules-left": [
+        // "custom/settings",
+        // "network",
+        "custom/endeavouros",
+        "custom/settings"
+    ],
+
+    //"modules-center": [
+        //"hyprland/workspaces"
+        // "niri/workspaces",
+        // "sway/workspaces"
+    //],
+
+    "modules-right": [
+        "custom/language",
+        "custom/app-launcher",
+        "custom/clipboard",
+        "group/system",
+        "clock",
+        "custom/notification_center"
+        
+    ],
+
+    "group/system": {
+        "orientation": "horizontal",
+        "modules": [
+            "pulseaudio",
+            "battery",
+            "bluetooth",
+            "network"
+        ]
+    },
+
+    "include": [
+        "~/.config/waybar/modules/network.json",
+        "~/.config/waybar/modules/pulseaudio.json",
+        "~/.config/waybar/modules/battery.json",
+        "~/.config/waybar/modules/clock.json",
+        "~/.config/waybar/modules/custom.json",
+        "~/.config/waybar/modules/bluetooth.json",
+        "~/.config/waybar/compositor-workspaces-module-override.json"
+    ]
+}

@@ -1,0 +1,64 @@
+*
+
+!.gitignore
+!README.md
+!ghostty/
+!ghostty/**
+!kitty/
+!kitty/**
+!alacritty/
+!alacritty/**
+!waybar/
+!waybar/**
+!fish/
+!fish/**
+!hypr/
+!hypr/**
+!niri/
+!niri/**
+# !wallpapers/
+# !wallpapers/**
+!yazi/
+!yazi/**
+!ThemeManager/
+!ThemeManager/**
+!cava/
+!build-conf.sh
+
+ThemeManager/WBTP 
+ThemeManager/ThemeSwitcher
+ThemeManager/ThemeGenerator
+
+wallpapers/
+wallpapers/**
+
+nvim/
+nvim/**
+mozilla/
+mozilla/**
+chromium/
+chromium/**
+
+# Wallpapers and large media
+wallpapers/
+*.mp4
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.webp
+*.bmp
+*.tiff
+
+# Browser profiles
+google-chrome/
+BraveSoftware/
+chromium/
+mozilla/
+
+# Cache files
+*.cache
+*.tflite
+*.swp
+*.bak
+__pycache__/

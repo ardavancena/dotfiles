@@ -1,0 +1,11 @@
+{
+    "spacing": 4,
+    "modules-left": ["custom/endeavouros", "custom/settings"],
+    "modules-center": ["hyprland/workspaces"],
+    "modules-right": ["custom/language", "custom/app-launcher", "custom/clipboard", "group/system", "clock", "custom/notification_center"],
+    "group/system": {
+        "orientation": "horizontal",
+        "modules": ["pulseaudio", "bluetooth", "network"]
+    },
+    "include": ["~/.config/waybar/modules/*.json"]
+}

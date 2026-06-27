@@ -1,0 +1,11 @@
+// To run a shell command (with variables, pipes, etc.), use spawn-sh-at-startup:
+// spawn-sh-at-startup "qs -c ~/source/qs/MyAwesomeShell"
+
+// STATUS BAR
+spawn-at-startup "~/.config/waybar/scripts/detect-compositor.sh"
+// spawn-at-startup "waybar" // I THINK IT DOES IT AUTOMATICALLY
+spawn-at-startup "~/.config/waybar/waybar-auto-reload.sh"
+
+// Wallpaper
+spawn-at-startup "systemctl --user start swww-daemon.service"
+spawn-at-startup "swww img ~/.config/wallpapers/Pictures/Anime/Anime-Sky-2560x1600.jpg --transition-type wipe --transition-duration 2 --transition-fps 60"

@@ -1,0 +1,310 @@
+@import url("colors.css");
+@import url("background-transparency.css");
+
+* {
+    font-family: "Inter", "JetBrainsMono Nerd Font", sans-serif;
+    font-size: 20px;
+    color: @foreground;
+    padding: 0px;
+    margin: 0px;
+    border-radius: 5px;
+    min-width: 30px;
+}
+
+/***************************************/
+/*       Default Module Configs        */
+/***************************************/
+
+#clock,
+#battery,
+#cpu,
+#memory,
+#network,
+#bluetooth,
+#workspaces,
+#custom-language,
+#custom-settings,
+#custom-notification_center,
+#custom-endeavouros,
+#custom-clipboard,
+#custom-app-launcher,
+#pulseaudio {
+/*    background: #3e3f5e; */
+/*    background: #201F25; */
+    background: @module-background;
+
+    border-radius: 120px;
+    color: @foreground;
+/*    padding: 10px 16px; */
+    margin: 4px 4px;
+}
+
+/*--------------------------*/
+/*      CUSTOM MODULES      */
+/*--------------------------*/
+
+#custom-endeavouros {
+    font-size: 25px;
+    background: transparent;
+    margin: 5px;
+    margin-right: 0px;
+    padding: 0px;
+    min-width: 50px;
+    border-radius: 145px;
+}
+
+#custom-language {
+    padding: 0px;
+    min-width: 55px;
+    border-radius: 21px;
+    margin-left: 0px;
+    margin-right: 0px;
+/*    min-width: 10px; */
+/*    padding-left: 10px;
+    padding-right: 10px;
+    margin: 3px; */
+}
+
+#custom-settings {
+    min-width: 50px;
+    border-radius: 17px;
+    border-radius: 55px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+#custom-notification_center {
+    margin: 5px;
+    padding: 0px;
+    padding-right: 2px;
+    margin-right: 5px;
+    min-width: 45px;
+    border-radius: 20px;
+    margin-left: 0px;
+    border-radius: 25px;
+}
+
+#custom-app-launcher {
+    font-size: 25px;
+    padding: 0px;
+    margin-right: 0px;
+    margin-left: 0px;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    min-width: 55px;
+}
+
+#custom-clipboard {
+    border-radius: 5px;
+    min-width: 55px;
+    margin-left: 1px;
+    margin-right: 1px;
+}
+
+/*                              */
+/*        Module Configs        */
+/*                              */
+
+#clock {
+    margin: 5px;
+    margin-left: 0px;
+    margin-right: 0px;
+    min-width: 90px;
+
+}
+
+#workspaces {
+/*    background: #3e3f5e; */
+    border-radius: 200px;
+    padding: 5px;
+}
+
+#workspaces button {
+/*    min-width: 28px; */
+/*    min-height: 28px; */
+/*    background: #3e3f5e; */
+    padding: 5px;
+    padding-left: 4px;
+    padding-right: 4px;
+    border-radius: 200px;
+    color: @foreground_muted;
+    transition: all 0.2s ease;
+}
+
+#workspaces button.active {
+    background: @active;
+    color: @on_primary_container;
+}
+
+#workspaces button:hover {
+    background: @primary_container;
+    color: @on_primary_container;
+}
+
+#workspaces button.urgent {
+/*    background: #ffa3b3; */
+    background: @urgent;
+    color: @foreground;
+}
+
+#workspaces button label {
+    font-weight: 500;
+}
+
+/* Remove old conflicting styles */
+#workspaces button.focused {
+    background-color: @primary;
+    box-shadow: none;
+}
+
+#network {
+    padding: 0px;
+/*    min-width: 50px; */
+}
+
+#network.disconnected {
+    background: @error;
+    color: @foreground;
+}
+
+/* Make the group visible instead */
+#system {
+    background: @module-background;
+    border-radius: 120px;
+/*    margin: 4px 4px; */
+    margin: 5px;
+    margin-left: 0px;
+    margin-right: 0px;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+}
+
+/* Add separators between modules */
+#system > *:not(:last-child) {
+    border-right: 0px solid rgba(255, 255, 255, 0.2);
+}
+
+/* First and last child rounded corners */
+#system > *:first-child {
+    border-radius: 120px 0 0 120px;
+    padding-left: 16px ;
+}
+
+#system > *:last-child {
+    border-radius: 0 120px 120px 0;
+    padding-right: 16px ;
+}
+
+window#waybar {
+/*    background-color: rgba(20, 19, 25, 1.0); */
+/*    background: transparent; */
+/*    background: #141318; */
+    background: @waybar-background;
+    color: @foreground;
+    transition-property: background-color;
+    transition-duration: .5s;
+}
+
+window#waybar.hidden {
+    opacity: 0.2;
+}
+
+window#waybar.termite {
+    background-color: #3F3F3F;
+}
+
+window#waybar.chromium {
+    background-color: #000000;
+    border: none;
+}
+
+button {
+    box-shadow: inset 0 -3px transparent;
+    border: none;
+}
+
+button:hover {
+    background: inherit;
+    box-shadow: inset 0 -3px @foreground;
+}
+
+#mode {
+    border-bottom: 3px solid @foreground;
+}
+
+.modules-left > widget:first-child > #workspaces {
+    margin-left: 0;
+}
+
+.modules-right > widget:last-child > #workspaces {
+    margin-right: 0;
+}
+
+#battery.charging, #battery.plugged {
+    color: @foreground;
+    background-color: @success;
+}
+
+@keyframes blink {
+    to {
+        background-color: @foreground;
+        color: @background_dark;
+    }
+}
+
+#battery.critical:not(.charging) {
+    background-color: @error;
+    color: @foreground;
+    animation-name: blink;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+label:focus {
+    background-color: @background_dark;
+}
+
+#battery {
+    min-width: 50px;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+/* #cpu {
+    background-color: @primary;
+    color: @background_dark;
+} */
+
+/*#language {
+    background: @primary_container;
+    color: @on_primary_container;
+    padding: 0 5px;
+    margin: 0 5px;
+    min-width: 16px;
+} */
+
+/*#keyboard-state {
+    background: @primary;
+    color: @background_dark;
+    padding: 0 0px;
+    margin: 0 5px;
+    min-width: 16px;
+}
+
+#keyboard-state > label {
+    padding: 0 5px;
+}
+
+#keyboard-state > label.locked {
+    background: rgba(0, 0, 0, 0.2);
+} */
+
+/* #scratchpad {
+    background: rgba(0, 0, 0, 0.2);
+}
+
+#scratchpad.empty {
+    background-color: transparent;
+} */

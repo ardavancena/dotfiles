@@ -1,0 +1,47 @@
+# background-opacity = 0
+# background-blur = true
+# background=#000000
+ 
+palette = 0=#45475a
+palette = 1=#f38ba8
+palette = 2=#a6e3a1
+palette = 3=#f9e2af
+palette = 4=#89b4fa
+palette = 5=#f5c2e7
+palette = 6=#94e2d5
+palette = 7=#bac2de
+palette = 8=#585b70
+palette = 9=#f38ba8
+palette = 10=#a6e3a1
+palette = 11=#f9e2af
+palette = 12=#89b4fa
+palette = 13=#f5c2e7
+palette = 14=#94e2d5
+palette = 15=#a6adc8
+
+config-file = ./colors
+
+window-padding-x = 15
+window-padding-y = 15
+
+font-size = 15
+
+### KEYBINDS
+
+# Spliting
+keybind = f5=new_split:left
+keybind = f8=new_split:right
+keybind = f7=new_split:up
+keybind = f6=new_split:down
+
+# Split resizing
+keybind = ctrl+h=goto_split:left
+keybind = ctrl+l=goto_split:right
+keybind = ctrl+j=goto_split:down
+keybind = ctrl+k=goto_split:up
+
+# Split Nav
+keybind = super+shift+h=resize_split:left,20
+keybind = super+shift+l=resize_split:right,20
+keybind = super+shift+j=resize_split:down,20
+keybind = super+shift+k=resize_split:up,20

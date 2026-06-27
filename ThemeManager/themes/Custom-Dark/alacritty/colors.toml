@@ -1,0 +1,26 @@
+[colors]
+# primary = { background = "#27252A" , foreground = "#ffffff" }
+primary = { background = "#1D2536" , foreground = "#ffffff" }
+
+
+normal = { 
+  black = "#201F25",
+  red = "#f38ba8",
+  green = "#a6e3a1",
+  yellow = "#f9e2af",
+  blue = "#89b4fa",
+  magenta = "#cba6f7",
+  cyan = "#74c7ec",
+  white = "#ffffff"
+}
+
+# bright = { 
+#   black = "#3e3f5e",
+#   red = "#f53c3c",
+#   green = "#26A65B",
+#   yellow = "#a6a9c5",
+#   blue = "#7c7fae",
+#   magenta = "#5b5e85",
+#   cyan = "#a6a9c5",
+#   white = "#ffffff"
+# }

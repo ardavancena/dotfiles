@@ -1,0 +1,13 @@
+{
+    "bluetooth": {
+        "format": "{icon}",
+        "format-disabled": "",
+        "format-icons": {
+            "enabled": "󰂯",
+            "disabled": "󰂲",
+            "connected": "󰂱"
+        },
+        "on-click": "blueman-manager",
+        "tooltip": false
+    }
+}

@@ -9,3 +9,6 @@ spawn-at-startup "~/.config/waybar/waybar-auto-reload.sh"
 // Wallpaper
 spawn-at-startup "systemctl --user start swww-daemon.service"
 spawn-at-startup "swww img ~/.config/wallpapers/Pictures/Anime/Anime-Sky-2560x1600.jpg --transition-type wipe --transition-duration 2 --transition-fps 60"
+
+// Draw on screen
+spawn-at-startup "wayscriber -d"

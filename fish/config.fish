@@ -106,11 +106,11 @@ alias tree-sitter='tree-sitter-cli'
 
 set -gx PATH /home/linuxbrew/.linuxbrew/bin /usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl
 
-export PATH="/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/home/ardavancena/.local/share/nvim/mason/bin"
+export PATH="/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/home/ardavancena/.local/share/nvim/mason/bin:$HOME/.local/share/uv/tools/hyprmod/bin/"
 starship init fish | source
 
 set EDITOR nvim
-set -gx QT_STYLE_OVERRIDE kvantum
 set -gx QT_QPA_PLATFORMTHEME qt5ct
-set -gx QT_STYLE_OVERRIDE Breeze
-set -gx QT_QPA_PLATFORMTHEME qt5ct
+
+# Created by `pipx` on 2026-06-28 13:28:42
+set PATH $PATH /home/ardavancena/.local/bin

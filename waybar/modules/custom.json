@@ -11,7 +11,7 @@
     "custom/settings": {
         "format": "⚙",
         "tooltip": false,
-        "on-click": "~/.config/waybar/scripts/ml4w-hyprland-settings.sh"
+        "on-click": "hyprmod"
     },
 
     "custom/launcher": {

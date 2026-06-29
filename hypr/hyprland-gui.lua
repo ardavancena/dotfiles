@@ -9,9 +9,10 @@ hl.config({
         },
     },
     general = {
+        border_size = 4,
         col = {
             active_border = {
-                colors = {"rgba(bf404000)", "rgba(bf404000)"},
+                colors = {"rgba(ffffffff)", "rgba(3584e4ff)"},
                 angle = 45,
             },
         },

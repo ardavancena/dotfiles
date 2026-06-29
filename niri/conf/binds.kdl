@@ -298,4 +298,6 @@ binds {
 
     // STATUS BAR BACKGROUND TRANSPARENCY
     Ctrl+F3 { spawn-sh "$HOME/.config/ThemeManager/WBTP"; }
+
+    Ctrl+F4 { spawn-sh "wayscriber --active"; }
 }

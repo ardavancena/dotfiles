@@ -21,6 +21,11 @@ hl.on("hyprland.start", function()
     hl.exec_cmd("swww img ~/.config/wallpapers/Pictures/Anime/Anime-Night-Girl.jpg -o eDP-1 --transition-type wipe --transition-duration 2 --transition-fps 60")
 end)
 
+-- draw on screen
+hl.on("hyprland.start", function()
+    hl.exec_cmd("wayscriber -d")
+end)
+
 -- exec-once = hyprlock
 
 -- exec-once = mpvpaper -o "loop" eDP-1 ~/.config/wallpapers/Videos/Acheron\ Black\ Hole\ 16:10.mp4:

@@ -108,3 +108,6 @@ hl.bind("SUPER + R", hl.dsp.exec_cmd("rofi -config ~/.config/rofi/app-launcher.r
 
 hl.bind("CTRL + F2", hl.dsp.exec_cmd("pkill -USR1 waybar"))
 hl.bind("CTRL + F3", hl.dsp.exec_cmd("$HOME/.config/ThemeManager/WBTP"))
+
+-- Draw on screen
+hl.bind("CTRL + F4", hl.dsp.exec_cmd("wayscriber --active"))

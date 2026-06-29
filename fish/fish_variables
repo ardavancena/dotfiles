@@ -2,4 +2,4 @@
 # VERSION: 3.0
 SETUVAR __fish_initialized:4300
 SETUVAR _fisher_upgraded_to_4_4:\x1d
-SETUVAR fish_user_paths:/home/ardavancena/\x2elocal/bin
+SETUVAR fish_user_paths:/home/ardavancena/\x2elocal/share/uv/tools/hyprmod/bin\x1e/home/ardavancena/\x2elocal/bin

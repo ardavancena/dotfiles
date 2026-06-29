@@ -23,6 +23,8 @@
 !ThemeManager/
 !ThemeManager/**
 !cava/
+!Kvantum/
+!Kvantum/**
 !build-conf.sh
 
 ThemeManager/WBTP 
